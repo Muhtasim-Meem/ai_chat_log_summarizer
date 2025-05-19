@@ -60,7 +60,7 @@ python main.py path/to/folder/
 ```
 
 ##  Screenshot
-! [Chat Summary Output] images
+! [Chat Summary Output](images/output.png)
 
 - Summary for chat.txt:
 - Summary:
