@@ -12,7 +12,12 @@ This Python-based tool reads `.txt` chat logs between a user and an AI, parses t
 - Generate Summary (Total number of Exchange, Nature of the conversation,Most common keywords)
 - Bonus: TF-IDF keyword extraction & multi-file support
 
-<pre> ## 📁 Sample Chat Format ``` User: Hello! AI: Hi! How can I assist you today? User: Can you explain what machine learning is? AI: Certainly! Machine learning is a field of AI that allows systems to learn from data. ``` </pre>
+## 📁 Sample Chat Format
+User: Hello!
+AI: Hi! How can I assist you today?
+User: Can you explain what machine learning is?
+AI: Certainly! Machine learning is a field of AI that allows systems to learn from data.
+
 
 
 ## 🛠 How to Run
