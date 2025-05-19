@@ -60,7 +60,7 @@ python main.py path/to/folder/
 ```
 
 ##  Screenshot
-! [Chat Summary Output](images/output.png)
+![Chat Summary Output](https://github.com/Muhtasim-Meem/ai_chat_log_summarizer/blob/main/images/output.png?raw=true)
 
 - Summary for chat.txt:
 - Summary:
