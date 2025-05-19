@@ -9,3 +9,16 @@ This Python-based tool reads `.txt` chat logs between a user and an AI, parses t
 - Bonus: TF-IDF keyword extraction & multi-file support
 
 ## 📁 Sample Chat Format
+
+
+
+## 🛠 How to Run
+```bash
+pip install -r requirements.txt
+python main.py chat.txt
+
+
+Summary:
+- 15 exchanges
+- User asked about Python and its uses
+- Common keywords: Python, use, data, AI, language
