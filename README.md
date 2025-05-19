@@ -60,9 +60,9 @@ python ai_chat_log_summarizer.py path/to/folder/
 ```
 
 
-Summary for chat.txt:
-Summary:
-    The Conversation had 2 exchanges (4 messages total).
-    2 messages were from the user and 2 from the AI.
-    The Conversation was primarily about machine learning.
-    Most Common keywords (using freequency based): machine, learning, hello, explain, assist.
+- Summary for chat.txt:
+- Summary:
+-    The Conversation had 2 exchanges (4 messages total).
+-    2 messages were from the user and 2 from the AI.
+-    The Conversation was primarily about machine learning.
+-    Most Common keywords (using freequency based): machine, learning, hello, explain, assist.
