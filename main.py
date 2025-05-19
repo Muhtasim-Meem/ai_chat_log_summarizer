@@ -93,9 +93,11 @@ class ChatLogSummarizer:
     def topics_identify(self,keywords ):
         keyword_str = ' '.join([word for word, _ in keywords])
         topics = {
-                "programming": ["python", "code", "program", "develop", "script", "function"],
-                "machine learning": ["ai", "ml", "algorithm", "learn", "model", "neural", "train"],
-                "data science": ["data", "analysis", "statistic", "visualization", "pandas", "dataset"],
+                'programming': ['python','code', 'program',"develop",'script',"function"],
+                'machine learning': ['ai',"ml",'algorithm','learn','model','neural','train'],
+                "data science": ['data',"analysis",'statistic','visualization',"pandas",'dataset'],
+                'natural language processing': ['nlp', 'language', 'text', 'tokenize', 'sentiment'],
+                'computer vision': ['image', 'vision', 'object', 'detect', 'recognition'],
                 "web development": ["web", "html", "css", "javascript", "frontend", "backend"],
                 "general inquiry": ["explain", "what", "how", "tell", "mean"]
             }
@@ -120,4 +122,30 @@ class ChatLogSummarizer:
     - The conversation was primarily about {topic}.
     - Most common keywords (using {method}): {', '.join([word for word, _ in keywords])}.
     """
+
+def process_file(file_path, use_tfidf=True):
+    """Process a single chat log file."""
+    summarizer = ChatLogSummarizer()
+    if summarizer.parse_chat_log(file_path):
+        summary = summarizer.generate_summary(use_tfidf)
+        print(f"\nSummary for {os.path.basename(file_path)}:")
+        print(summary)
+        return summary
+    return None
+
+def process_folder(folder_path, use_tfidf=True):
+    """Process all .txt files in a folder."""
+    if not os.path.isdir(folder_path):
+        print(f"Error: {folder_path} is not a valid directory.")
+        return {}
+    
+    txt_files = [f for f in os.listdir(folder_path) if f.endswith('.txt')]
+    if not txt_files:
+        print(f"No .txt files found in {folder_path}")
+        return {}
+    print(f"Processing {len(txt_files)} chat log files...")
+    return {file_name: process_file(os.path.join(folder_path, file_name), use_tfidf) 
+            for file_name in txt_files if process_file(os.path.join(folder_path, file_name), use_tfidf)}
+
+
 
