@@ -41,13 +41,11 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 4. Download NLTK Resources
-python
-Copy
-Edit
-# Run this Python code once:
-import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
+
+Run this Python code once:
+- import nltk
+- nltk.download('punkt')
+-nltk.download('stopwords')
 
 5.  Run the Script For a single chat log file:
 ```bash
@@ -65,7 +63,7 @@ python ai_chat_log_summarizer.py path/to/folder/
 
 Summary for chat.txt:
 Summary:
-    The Conversation had 2 exchanges (4 messages total).
-    2 messages were from the user and 2 from the AI.
-    The Conversation was primarily about machine learning.
-    Most Common keywords (using freequency based): machine, learning, hello, explain, assist.
+    - The Conversation had 2 exchanges (4 messages total).
+    - 2 messages were from the user and 2 from the AI.
+    - The Conversation was primarily about machine learning.
+    - Most Common keywords (using freequency based): - - machine, learning, hello, explain, assist.
