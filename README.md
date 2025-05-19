@@ -48,15 +48,15 @@ Run this Python code once:
 
 5.  Run the Script For a single chat log file:
 ```bash
-python ai_chat_log_summarizer.py chat.txt
+python amain.py chat.txt
 ```
 To use basic keyword extraction instead of TF-IDF:
 ```bash
-python ai_chat_log_summarizer.py chat.txt --basic
+python main.py chat.txt --basic
 ```
 To process multiple chat logs in a folder:
 ```bash
-python ai_chat_log_summarizer.py path/to/folder/
+python main.py path/to/folder/
 ```
 
 
