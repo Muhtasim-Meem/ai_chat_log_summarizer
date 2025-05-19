@@ -12,13 +12,7 @@ This Python-based tool reads `.txt` chat logs between a user and an AI, parses t
 - Generate Summary (Total number of Exchange, Nature of the conversation,Most common keywords)
 - Bonus: TF-IDF keyword extraction & multi-file support
 
-## 📁 Sample Chat Format
-User: Hello!
-AI: Hi! How can I assist you today?
-User: Can you explain what machine learning is?
-AI: Certainly! Machine learning is a field of AI that allows systems to
-learn from data.
-
+<pre> ## 📁 Sample Chat Format ``` User: Hello! AI: Hi! How can I assist you today? User: Can you explain what machine learning is? AI: Certainly! Machine learning is a field of AI that allows systems to learn from data. ``` </pre>
 
 
 ## 🛠 How to Run
@@ -45,7 +39,7 @@ pip install -r requirements.txt
 Run this Python code once:
 - import nltk
 - nltk.download('punkt')
--nltk.download('stopwords')
+- nltk.download('stopwords')
 
 5.  Run the Script For a single chat log file:
 ```bash
