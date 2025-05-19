@@ -147,5 +147,19 @@ def process_folder(folder_path, use_tfidf=True):
     return {file_name: process_file(os.path.join(folder_path, file_name), use_tfidf) 
             for file_name in txt_files if process_file(os.path.join(folder_path, file_name), use_tfidf)}
 
-
+if __name__ == "__main__":
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Summarize AI chat log.')
+    parser.add_argument('path', help='Path to a chat log file or folder')
+    parser.add_argument('--basic', action='store_true', help='Use basic frequency analysis instead of TF-IDF')
+    
+    args = parser.parse_args()
+    
+    if os.path.isdir(args.path):
+        process_folder(args.path, not args.basic)
+    elif os.path.isfile(args.path):
+        process_file(args.path, not args.basic)
+    else:
+        print(f"Error: {args.path} is not a valid file or directory.")
 
