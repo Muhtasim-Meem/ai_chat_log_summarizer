@@ -48,7 +48,7 @@ Run this Python code once:
 
 5.  Run the Script For a single chat log file:
 ```bash
-python amain.py chat.txt
+python main.py chat.txt
 ```
 To use basic keyword extraction instead of TF-IDF:
 ```bash
@@ -59,6 +59,8 @@ To process multiple chat logs in a folder:
 python main.py path/to/folder/
 ```
 
+##  Screenshot
+! [Chat Summary Output] (images\output.png)
 
 - Summary for chat.txt:
 - Summary:
