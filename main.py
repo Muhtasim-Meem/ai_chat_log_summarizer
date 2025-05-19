@@ -36,3 +36,14 @@ def parse_chat_log(self, file_path):
         print(f"Error reading file: {e}")
         return False
     
+
+def analyze_chat_statistics(self):
+
+    return {
+        'user_message' : len(self.user_messages),
+        'ai_message' : len(self.ai_messages),
+        'total_messages' : len(self.user_messages) + len(self.ai_messages),
+        'exchanges' : min(len(self.user_messages), len(self.ai_messages)),
+    }
+
+
