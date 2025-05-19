@@ -1,4 +1,4 @@
-# AI Chat Log Summarizer 🧠💬
+# AI Chat Log Summarizer 
 
 This Python-based tool reads `.txt` chat logs between a user and an AI, parses the conversation, and generates a simple summary with message stats and keyword analysis.
 
@@ -20,7 +20,7 @@ This Python-based tool reads `.txt` chat logs between a user and an AI, parses t
 
 
 
-## 🛠 How to Run
+##  How to Run
 1. Clone the Repository
 ```bash
 git clone https://github.com/Muhtasim-Meem/ai_chat_log_summarizer.git
