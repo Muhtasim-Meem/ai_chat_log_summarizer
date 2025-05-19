@@ -117,10 +117,10 @@ class ChatLogSummarizer:
             topic = self.topics_identify(keywords)
             
             return f"""Summary:
-    - The conversation had {stats['exchanges']} exchanges ({stats['total_messages']} messages total).
+    - The Conversation had {stats['exchanges']} exchanges ({stats['total_messages']} messages total).
     - {stats['user_messages']} messages were from the user and {stats['ai_messages']} from the AI.
-    - The conversation was primarily about {topic}.
-    - Most common keywords (using {method}): {', '.join([word for word, _ in keywords])}.
+    - The Conversation was primarily about {topic}.
+    - Most Common keywords (using {method}): {', '.join([word for word, _ in keywords])}.
     """
 
 def process_file(file_path, use_tfidf=True):
